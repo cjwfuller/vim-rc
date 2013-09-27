@@ -84,7 +84,7 @@ endif
 " Define a new command alias.
 function! CmdAlias(lhs, ...)
   let lhs = a:lhs
-  if lhs !~ '^\w\+$'
+  if lhs !~ '^\w\+$' && lhs != '..'
     echohl ErrorMsg | echo 'Only word characters are supported on <lhs>' | echohl NONE
     return
   endif
