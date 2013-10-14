@@ -1,1 +1,2 @@
 set ru
+set sc
